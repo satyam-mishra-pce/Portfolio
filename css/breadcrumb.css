@@ -1,0 +1,32 @@
+#breadcrumb {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#breadcrumb .piece {
+    font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    padding: 0 12px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 4px;
+}
+
+#breadcrumb button.piece {
+    background: transparent;
+    color: rgb(var(--fg-100));
+    border: none;
+    cursor: default;
+    border-radius: 12px;
+}
+
+#breadcrumb button.piece:hover {
+    background: rgb(var(--bg-30));
+}

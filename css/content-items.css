@@ -1,0 +1,121 @@
+.content-item {
+    padding: 10px 0;
+    border-radius: 6px;
+    border: 1px solid rgb(var(--fg-50), 0.1);
+    border-top: 1px solid rgb(var(--fg-50), 0.3);
+    background: rgb(var(--bg-30), 0.7);
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.content-item:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content-item:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* Pair Styling */
+
+.content-item.pair {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+}
+
+.content-item.pair .key {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.content-item.pair .value {
+    padding: 15px;
+    font-size: 17px;
+}
+
+/* Text Styling */
+
+.content-item.text {
+
+}
+
+.content-item.text h1 {
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(var(--fg-40), 0.2);
+}
+
+.content-item.text p {
+    font-size: 17px;
+    padding: 20px 25px 0 25px;
+}
+
+
+.content-item.text p:last-child {
+    padding-bottom: 15px;
+}
+
+.content-item.text h2 {
+    font-size: 18px;
+    color: rgb(var(--fg-90));
+    padding: 20px 25px 0 25px;
+}
+
+/* List Styling */
+
+.content-item.list {
+
+}
+
+.content-item.list h1 {
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(var(--fg-40), 0.2);
+}
+
+    /* Progress Style List Styling */
+    .content-item.list .list-item.progress {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        border-bottom: 1px solid rgb(var(--fg-40), 0.2);
+        align-items: center;
+    }
+
+    .content-item.list .list-item.progress .label {
+        padding: 15px 15px 15px 25px;
+    }
+
+    .content-item.list .list-item.progress .bar {
+        margin: 15px;
+        width: auto;
+        border-radius: 3px;
+        background: rgb(var(--bg-40));
+    }
+    .content-item.list .list-item.progress .bar .progress {
+        height: 6px;
+        border-radius: 3px;
+        background: rgb(var(--accent));
+    }
+
+    /* Duet Style List Styling */
+    .content-item.list .list-item.duet {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        border-bottom: 1px solid rgb(var(--fg-40), 0.2);
+        align-items: center;
+    }
+
+    .content-item.list .list-item.duet .key {
+        padding: 15px 25px;
+        font-weight: 600;
+    }
+
+    .content-item.list .list-item.duet .value {
+        padding: 15px 25px;
+    }
